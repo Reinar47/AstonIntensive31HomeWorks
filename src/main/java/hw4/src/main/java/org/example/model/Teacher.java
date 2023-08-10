@@ -1,6 +1,7 @@
-package hw3.model;
+package org.example.model;
 
 import lombok.*;
+import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Column;
@@ -10,20 +11,22 @@ import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@EqualsAndHashCode(callSuper = true)
 @Data
-@NoArgsConstructor
+@Entity
 @SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "teacher")
-public class Teacher extends Person{
+@EqualsAndHashCode(callSuper = true)
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class Teacher extends Person {
 
     @Column(name = "is_teacher")
-    private boolean isTeacher;
+    boolean isTeacher;
 
     @ManyToMany(mappedBy = "teachers")
     @Builder.Default
-    private Set<Course> courses = new HashSet<>();
+    Set<Course> courses = new HashSet<>();
 
     @Override
     public String toString() {
@@ -32,5 +35,7 @@ public class Teacher extends Person{
                 getFirstName());
     }
 
+
 }
+
 

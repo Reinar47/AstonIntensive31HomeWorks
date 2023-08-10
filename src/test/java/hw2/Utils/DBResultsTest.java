@@ -39,6 +39,8 @@ class DBResultsTest {
             .build();
     private static final List<Object> RESULT_STUDENT_OBJECTS_FROM_DB =
             List.of(TEST_STUDENT_1, TEST_STUDENT_2, TEST_STUDENT_3);
+
+
     private static final List<Object> RESULT_TEACHER_OBJECTS_FROM_DB = List.of(TEST_TEACHER);
 
     private static final List<String> RESULT_COURSE_FROM_DB = List.of("Programming");
