@@ -1,34 +1,35 @@
-package hw3.model;
+package org.example.model;
 
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
-@Entity
 @Data
+@Entity
 @SuperBuilder
 @NoArgsConstructor
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Table(name = "person")
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
-    private long id;
+    long id;
     @Column(name = "first_name", nullable = false)
-    private String firstName;
+    String firstName;
     @Column(name = "last_name", nullable = false)
-    private String lastName;
+    String lastName;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Person)) return false;
-        Person person = (Person) o;
+        if (!(o instanceof Person person)) return false;
         return getId() == person.getId();
     }
 

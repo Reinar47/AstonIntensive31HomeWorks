@@ -28,8 +28,7 @@ public class PrintResultStudent implements PrintResult {
             }
 
             return students;
-        } catch (
-                SQLException e) {
+        } catch (SQLException e) {
             throw new RuntimeException("Exception in method printResult");
         }
 
