@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.model;
+package org.example.model;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

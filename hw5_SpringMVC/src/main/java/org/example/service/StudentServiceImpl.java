@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.service;
+package org.example.service;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

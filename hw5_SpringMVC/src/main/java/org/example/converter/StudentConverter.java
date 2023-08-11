@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.converter;
+package org.example.converter;
 
 import org.example.dto.StudentDto;
 import org.example.model.Student;

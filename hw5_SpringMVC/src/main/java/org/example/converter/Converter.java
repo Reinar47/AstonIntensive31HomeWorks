@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.converter;
+package org.example.converter;
 
 import java.util.List;
 import java.util.stream.Collectors;

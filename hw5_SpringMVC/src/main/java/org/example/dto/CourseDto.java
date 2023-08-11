@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.dto;
+package org.example.dto;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

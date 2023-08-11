@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.config;
+package org.example.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -16,7 +16,7 @@ public class ApplicationInitializer implements WebApplicationInitializer {
 
         AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
 
-        webApplicationContext.register(ApplicationConfig.class);
+        webApplicationContext.register(org.example.config.ApplicationConfig.class);
 
         ContextLoaderListener contextLoaderListener = new ContextLoaderListener(webApplicationContext);
 

@@ -1,6 +1,8 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.exception;
+package org.example.exception;
 
-public class TeacherNotFoundException extends NotFoundException{
+import javassist.NotFoundException;
+
+public class TeacherNotFoundException extends NotFoundException {
     public TeacherNotFoundException() {
         super("Can't find any teachers");
     }

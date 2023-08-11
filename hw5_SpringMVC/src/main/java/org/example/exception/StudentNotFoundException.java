@@ -1,4 +1,6 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.exception;
+package org.example.exception;
+
+import javassist.NotFoundException;
 
 public class StudentNotFoundException extends NotFoundException {
 

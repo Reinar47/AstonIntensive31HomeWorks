@@ -1,7 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.repositories;
-
-
-
+package org.example.repositories;
 
 
 import org.example.model.Teacher;

@@ -1,8 +1,9 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.controllers;
+package org.example.controllers;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.example.controllers.MainController;
 import org.example.dto.TeacherDto;
 import org.example.exception.TeacherNotFoundException;
 import org.example.service.TeacherServiceImpl;

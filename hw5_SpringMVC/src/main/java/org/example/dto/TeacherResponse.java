@@ -1,9 +1,10 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.dto;
+package org.example.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.dto.TeacherDto;
 
 import java.util.List;
 

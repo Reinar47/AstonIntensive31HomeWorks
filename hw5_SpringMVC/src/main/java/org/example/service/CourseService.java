@@ -1,4 +1,4 @@
-package com.example.rest.temp.hw5_SpringMVC.src.main.java.org.example.service;
+package org.example.service;
 
 import org.example.exception.CourseNotFoundException;
 import org.example.model.Course;
