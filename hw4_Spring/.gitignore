@@ -36,8 +36,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/src/test/
-/.idea/
-/hw4_Spring/
-/hw1-3/
-
