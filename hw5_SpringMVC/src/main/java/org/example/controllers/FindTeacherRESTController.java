@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.http.ResponseEntity.ok;
 
-@Tag(name = "FindTeachers controller", description = "Service for find Teachers")
 @RestController
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE,makeFinal = true)
@@ -29,7 +28,6 @@ public class FindTeacherRESTController {
     /**
      * find teachers by course
      */
-    @Operation(summary = "Find teachers by course")
     @GetMapping(value = "/{course-name}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public ResponseEntity<TeacherResponse> getTeachersByCourse(@PathVariable("course-name")String courseName)

@@ -19,7 +19,6 @@ import static org.springframework.http.ResponseEntity.ok;
 @RestController
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE,makeFinal = true)
-@Tag(name = "FindStudent controller", description = "Service for find Students")
 @RequestMapping("/students")
 public class FindStudentRESTController {
 
@@ -29,7 +28,6 @@ public class FindStudentRESTController {
     /**
      * find students by course
      */
-    @Operation(summary = "Find students by course")
     @GetMapping(value = "/{course-name}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public ResponseEntity<StudentResponse> getStudentsByCourse(@PathVariable("course-name") String courseName)
